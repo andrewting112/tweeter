@@ -59,15 +59,15 @@
     <main class="container">
       <section class="new-tweet">
         <div class="errormessage">
-          <text>Text too long! Please Shorten</text>
+          <text>No text or text too long! Please change your input length. </text>
         </div>
         <h2>Compose Tweet</h2>
 
         <form id="compose" method="POST" action="/tweets/" id="new-post">
-          <textarea id="text1" name="text" placeholder="What are you humming about?"></textarea>
+          <textarea id="textinput" name="text" placeholder="What are you humming about?"></textarea>
           <span>
             <input id="tweetbutton" type="submit" value="Tweet">
-            <span id="counter1" class="counter">140</span>
+            <span id="textcounter" class="counter">140</span>
           </span>
         </form>
       </section>
